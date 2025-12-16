@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Phone Market - Nous sommes à votre écoute">
+    <title>Phone Market - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Phone Market" class="logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-propos.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="boutique.html">Boutique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                    <a href="panier.html" class="btn btn-primary position-relative">
+                        <i class="bi bi-cart3"></i> Panier
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <h2 class="mb-4">Envoyez-nous un message</h2>
+                        <p class="text-muted mb-4">Vous avez une question ou besoin d'aide ? Remplissez le formulaire
+                            ci-dessous et nous vous répondrons dans les plus brefs délais.</p>
+
+                        <form class="needs-validation" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Nom complet <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="name" required>
+                                    <div class="invalid-feedback">
+                                        Veuillez entrer votre nom.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Veuillez entrer une adresse email valide.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Téléphone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Sujet <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">Choisissez un sujet</option>
+                                        <option value="info">Information produit</option>
+                                        <option value="commande">Question sur commande</option>
+                                        <option value="sav">Service après-vente</option>
+                                        <option value="partenariat">Partenariat</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Veuillez sélectionner un sujet.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Message <span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                    <div class="invalid-feedback">
+                                        Veuillez entrer votre message.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="consent" required>
+                                        <label class="form-check-label" for="consent">
+                                            J'accepte que mes données soient utilisées pour me répondre <span
+                                                class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Vous devez accepter avant de soumettre.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send me-2"></i>Envoyer le message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Informations de contact -->
+                <div class="col-lg-5">
+                    <div class="contact-info-wrapper">
+                        <h2 class="mb-4">Nos Coordonnées</h2>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex">
+                                <div class="icon-box me-3">
+                                    <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Adresse</h5>
+                                    <p class="text-muted mb-0">Avenue Kwame Nkrumah<br>Secteur 12,
+                                        Ouagadougou<br>Burkina Faso</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex">
+                                <div class="icon-box me-3">
+                                    <i class="bi bi-telephone-fill text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Téléphone</h5>
+                                    <p class="text-muted mb-1">+226 70 93 23 12</p>
+                                    <p class="text-muted mb-0">+226 66 38 34 52</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex">
+                                <div class="icon-box me-3">
+                                    <i class="bi bi-envelope-fill text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p class="text-muted mb-1">contact@phonemarket.bf</p>
+                                    <p class="text-muted mb-0">support@phonemarket.bf</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item mb-4">
+                            <div class="d-flex">
+                                <div class="icon-box me-3">
+                                    <i class="bi bi-clock-fill text-primary fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Horaires d'ouverture</h5>
+                                    <p class="text-muted mb-1">Lundi - Vendredi : 8h00 - 19h00</p>
+                                    <p class="text-muted mb-1">Samedi : 9h00 - 17h00</p>
+                                    <p class="text-muted mb-0">Dimanche : Fermé</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Réseaux sociaux -->
+                        <div class="social-section mt-4 p-4 bg-light rounded">
+                            <h5 class="mb-3">Suivez-nous</h5>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-info text-white">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a href="#" class="btn btn-success">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARTE GOOGLE MAPS -->
+    <section class="map-section">
+        <div class="container-fluid p-0">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62451.89367812195!2d-1.5595478!3d12.3714277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2ebe777d0e2363%3A0x64c7d1feb6e3db82!2sOuagadougou%2C%20Burkina%20Faso!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Questions Fréquentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Quels sont les délais de livraison ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous livrons en 24-48h dans toutes les grandes villes du Burkina Faso (Ouagadougou,
+                                    Bobo-Dioulasso, Koudougou). Pour les autres localités, le délai peut être de 3-5
+                                    jours ouvrables.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Les téléphones sont-ils garantis ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, tous nos téléphones bénéficient d'une garantie constructeur officielle de 12
+                                    mois. Nous assurons également un service après-vente réactif.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Quels sont les moyens de paiement acceptés ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous acceptons le paiement par carte bancaire, mobile money (Orange Money, Moov
+                                    Money), et paiement à la livraison pour certaines zones.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Puis-je retourner un produit ?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, vous disposez de 14 jours pour retourner un produit non ouvert. Le téléphone
+                                    doit être dans son emballage d'origine avec tous les accessoires.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5 class="mb-3">À Propos de Phone Market</h5>
+                    <p>Votre boutique en ligne de confiance pour l'achat de smartphones au Burkina Faso. Qualité
+                        garantie et meilleurs prix.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="mb-3">Liens Rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Accueil</a></li>
+                        <li><a href="boutique.html" class="text-white-50">Boutique</a></li>
+                        <li><a href="a-propos.html" class="text-white-50">À propos</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                        <li><a href="#" class="text-white-50">CGV</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="mb-3">Nous Contacter</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill me-2"></i>
+                            Avenue Kwame Nkrumah, Ouagadougou
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            +226 70 93 23 13
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            contact@phonemarket.bf
+                        </li>
+                        <li>
+                            <i class="bi bi-clock-fill me-2"></i>
+                            Lun-Sam: 8h-19h
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="mb-3">Suivez-nous</h5>
+                    <div class="social-links">
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary btn-sm mb-2">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-4 mb-3 border-secondary">
+            <div class="text-center">
+                <p class="mb-0">© 2025 Phone Market. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
